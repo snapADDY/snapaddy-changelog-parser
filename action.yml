@@ -1,0 +1,17 @@
+name: 'snapADDY Changelog Parser'
+author : 'snapADDY GmbH'
+description: 'Extract latest entry from markdown formatted changelog'
+branding:
+  icon: 'file-text'
+  color: 'green'
+inputs:
+  changelog-path: 
+    description: 'path to changelog file'
+    required: true
+    default: 'CHANGELOG.md'
+outputs:
+  changelog:
+    description: 'The changelog for the given tag'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
