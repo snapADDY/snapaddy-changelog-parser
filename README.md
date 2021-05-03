@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Read Changelog
-        uses: snapADDY/snapaddy-parse-changelog@1.0.0
+        uses: snapADDY/snapaddy-parse-changelog@0.1.0
         id: read
       - name: Release
         uses: softprops/action-gh-release@v1
@@ -65,4 +65,9 @@ would return:
 ### Output
 | Name | Type | Description |
 |---|---|---|
-| changelog | string |  |
+| changelog | string | see example above |
+
+---
+
+## Dev Notes
+If you make any adjustments, make sure to run `npm run build` before committing.
